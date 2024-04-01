@@ -1,0 +1,13 @@
+<main>
+  <app-header></app-header>
+
+  <div class="uk-container uk-container-medium main">
+    <router-outlet></router-outlet>
+
+    <div class="scroll" *ngIf="scrollup == true">
+      <app-scrollup-button id="test"></app-scrollup-button>
+    </div>
+  </div>
+
+  <app-footer></app-footer>
+</main>

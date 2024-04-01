@@ -1,0 +1,31 @@
+.fab{
+    background: transparent;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border: none;
+    border-radius: 50%;
+    background-color: var(--color-black);
+    // opacity: .6;
+    padding: .6em;
+    transform: scale(1.1);
+
+
+    display: grid;
+    place-items: center;
+    position: fixed;
+    bottom: 4em;
+    right: 5em;
+    z-index: 1;
+
+    cursor: pointer;
+
+    span{
+        font-size: 1.5em;
+        color: #fff;
+    }
+
+    &:hover{
+        transform: scale(1.2);
+        opacity: .8;
+
+    }
+}

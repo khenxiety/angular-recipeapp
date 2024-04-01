@@ -1,0 +1,39 @@
+
+main{
+    position: relative;
+    padding-block: 4em;
+}
+                
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+
+    
+}
+.right{
+    h3{
+        font-weight: 600;
+        
+    }
+}
+
+.instructions, .ingredients{
+    h3{
+        font-weight: 600;
+        
+        margin-bottom: .8em;
+    }
+}
+
+.uk-tab>.uk-active>a {
+    color: #333;
+    border-color: var(--color-black);
+}
+.uk-tab>*>a {
+    
+    border-bottom: 2px solid transparent;
+    
+}

@@ -1,0 +1,23 @@
+.fab{
+    background: transparent;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    padding: .6em;
+    transform: scale(1.1);
+
+
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    cursor: pointer;
+
+
+    &:hover{
+        transform: scale(1.2);
+    }
+}

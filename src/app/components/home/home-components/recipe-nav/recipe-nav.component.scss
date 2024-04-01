@@ -1,0 +1,118 @@
+.nav-bar{
+
+    .nav{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+        
+        padding: 0;
+
+        
+        
+        li{
+            flex: 1 1 0px;
+            padding: 1.5em;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--color-gray);
+            border-radius: 50%;
+            height: 6rem;
+            width: 6rem;
+            transform: scale(0.8);
+            
+            cursor: pointer;
+
+
+
+          
+
+            span{
+                font-size: .8rem;
+                color: white;
+            }
+
+
+            &:hover{
+              transform: scale(0.9);
+
+              svg{
+                -webkit-animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	              animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+              }
+
+            }
+
+        }
+        .left{
+          animation: left 1s forwards ease-out;
+
+        }
+        .right{
+          animation: right 1s forwards ease-out;
+        }
+
+        
+    }
+}
+@keyframes left{
+
+  from{
+    
+
+    transform:scale(0.8) translateX(160px)
+  }
+  to{
+    transform: scale(0.8) translateX(0px)
+  }
+}
+@keyframes right{
+
+  from{
+    
+
+    transform:scale(0.8) translateX(-160px)
+  }
+  to{
+    transform: scale(0.8) translateX(0px)
+  }
+}
+
+
+
+
+  @keyframes shake-horizontal {
+    0%,
+    100% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    
+    70% {
+      -webkit-transform: rotate(-30deg);
+              transform: rotate(-30deg);
+    }
+    
+    60% {
+      -webkit-transform: rotate(30deg);
+              transform: rotate(30deg);
+    }
+    80% {
+      -webkit-transform: rotate(10deg);
+              transform: rotate(10deg);
+    }
+    
+  }
+  
+
+@media (max-width: 849px){
+    .nav-bar{
+        .nav{
+            gap:15px;
+        }
+    }
+}

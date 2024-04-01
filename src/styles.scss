@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+*,h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.5s ease;
+}
+
+
+:root{
+    --color-black:#1b1b1b;
+    --color-gray:#434343;
+}
+
+body{
+
+    font-size: 16px;
+    min-height: 100vh
+
+}
+
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+@import 'swiper/scss/pagination';
+
+
+.text-white{
+    color: white;
+}
